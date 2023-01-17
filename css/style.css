@@ -10,7 +10,7 @@
 [07] CHOOSE US
 [08] TESTMONIAL
 [09] OUR CLIENT
-[10] OUR BLOG
+[10] OUR faq
 [11] WHAT SAY
 [12] CONTACT
 [13] FOOTER
@@ -18,8 +18,8 @@
 [15] BACK TO TOP
 [16] HOME TWO
 [17] WORK DETAIL
-[18] BLOG LIST
-[19] BLOG DETAIL
+[18] faq LIST
+[19] faq DETAIL
 [20] HOME THREE
 ==========================================================================*/
 
@@ -842,63 +842,63 @@ i.stroke_black {
     opacity: 1; 
 }
 /*=======================================================================
-[10] OUR BLOG
+[10] OUR faq
 =========================================================================*/
-.blogSection{
+.faqSection{
     background: url(../images/bg/5.jpg) no-repeat fixed center center/cover;
     padding: 123px 0 140px;
 }
-.singleBlog{
+.singlefaq{
     background: #fff;
     margin: 0 7.5px;
 }
-.blogDec{
+.faqDec{
     padding: 61px 30px 45px 41px;   
 }
-.blogDate{
+.faqDate{
     color: #fd0060;
     font-size: 12px;
     font-weight: 400;
     line-height: 1;
     margin-bottom: 20px;
 }
-.blogThumb img{
+.faqThumb img{
     width: 100%;
     height: auto;
 }
-.blogTitle{
+.faqTitle{
     margin-bottom: 28px;
     min-height: 108px;
 }
 .bperaDiv {
     min-height: 182px;
 }
-.blogTitle a{
+.faqTitle a{
     font-size: 26px;
     color: #000000;
 }
-.blogTitle a:hover{
+.faqTitle a:hover{
     color: #fd0060;
 }
-.blogDec p:last-of-type{
+.faqDec p:last-of-type{
     margin-bottom: 39px;
 }
-.blogBott{
+.faqBott{
     overflow: hidden;
 }
 .bauthor{
     float: left;
 }
-.blogComs{
+.faqComs{
     float: right;
     font-size: 12px;
     color: #999999;
     line-height: .8;
 }
-.blogComs img{
+.faqComs img{
     margin-right: 9px;
 }
-.blogComs a:hover{
+.faqComs a:hover{
     color: #fd0060;
 }
 .bauthor,
@@ -1383,7 +1383,7 @@ i.stroke_black {
 #testmonialCaro.home_page2::before{
     color: #fd0060;
 }
-.blogSection.home_page2{
+.faqSection.home_page2{
     background: url("../images/bg/10.jpg") no-repeat scroll center center / cover;
 }
 .contact.home_page2{
@@ -1452,6 +1452,16 @@ i.stroke_black {
     position: absolute;
     right: 0;
     top: -132px;
+    width: auto;
+}
+.perelaxBg6 {
+    background: rgba(0, 0, 0, 0) url("../images/bg/p1.png") no-repeat center 0 ;
+    left: 0;
+    position: absolute;
+    right: 0;
+    height: 593px;
+    top: 0;
+    margin: auto;
     width: auto;
 }
 .perelaxBg1:hover,.perelaxBg2:hover, .perelaxBg3:hover, .perelaxBg4:hover, .perelaxBg5:hover {
@@ -1525,8 +1535,12 @@ i.stroke_black {
     position: relative;
 }
 .header.workDetail .mainMenu ul li a,
-.header.workDetail .callus p{
-    color: #000;
+.header.workDetail .callus p {
+    color: white;
+}
+.header.workDetail.isSticky.fixedHeader .mainMenu ul li a,
+.header.workDetail.isSticky.fixedHeader .callus p {
+    color: black;
 }
 .workDetailHead {
     padding: 118px 0 94px;
@@ -1714,24 +1728,30 @@ i.stroke_black {
 }
 
 /*=======================================================================
-[18] BLOG LIST
+[18] faq LIST
 =========================================================================*/
-.blogTitleSec {
-    padding-bottom: 50px;
+.headerBg {
+    background-image: url('https://www.nasa.gov/sites/default/files/thumbnails/image/web_first_images_release.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.faqTitleSec {
+    padding-bottom: 132px;
     padding-top: 88px;
 }
-.blogTitleList h2 {
+.faqTitleList h2 {
     font-size: 140px;
     line-height: 160px;
     margin: 0;
     font-weight: 600;
 }
-.blogCat {
+.faqCat {
     position: relative;
     top: 63px;
     width: 185px;
 }
-.blogCat h6{
+.faqCat h6{
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 0;
@@ -1756,17 +1776,17 @@ i.stroke_black {
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
 }
-.blogCat.active h6{
+.faqCat.active h6{
     background: #000;
     color: #fff;
     border-color: #000;
 }
-.blogCat h6 i{
+.faqCat h6 i{
     position: absolute;
     right: 18px;
     top: 18px;
 }
-.blogCat ul {
+.faqCat ul {
     border: 1px solid #c3c3c3;
     position: absolute;
     width: 186px;
@@ -1777,16 +1797,16 @@ i.stroke_black {
     z-index: 9;
     background: #fff;
 }
-.blogCat.active ul{
+.faqCat.active ul{
     display: block;
 }
-.blogCat ul li{
+.faqCat ul li{
     border-bottom: 1px solid #cccccc;
 }
-.blogCat ul li:last-of-type{
+.faqCat ul li:last-of-type{
     border-bottom: none;
 }
-.blogCat ul li a {
+.faqCat ul li a {
     color: #000;
     display: block;
     font-size: 14px;
@@ -1795,46 +1815,46 @@ i.stroke_black {
     line-height: 1.5;
     padding: 14px 10px 14px 26px;
 }
-.blogCat ul li a:hover{
+.faqCat ul li a:hover{
     color: #fd0060;
 }
-.blogContents{
+.faqContents{
     background: #f3f3f3;
     padding: 22px 0 68px;
 }
-.singleBlog2{
+.singlefaq2{
     border: 1px solid #eaeaea;
     margin-bottom: 20px;
 }
-.singleBlog2.bigpost .blogTitle{
+.singlefaq2.bigpost .faqTitle{
     min-height: 0;
 }
-.singleBlog2.bigpost .blogTitle{
+.singlefaq2.bigpost .faqTitle{
     font-weight: 600;
 }
-.singleBlog2.bigpost .blogTitle a{
+.singlefaq2.bigpost .faqTitle a{
     font-size: 46px;
     line-height: 60px;
 }
-.singleBlog2.bigpost .bperaDiv{
+.singlefaq2.bigpost .bperaDiv{
     min-height: 0;
 }
-.blogLoadmore{
+.faqLoadmore{
     margin-top: 65px;
 }
-.singleBlog2.bigpost .blogDec{
+.singlefaq2.bigpost .faqDec{
     padding: 61px 45px 45px 41px;
 }
 
 /*=======================================================================
-[19] BLOG DETAIL
+[19] faq DETAIL
 =========================================================================*/
-.blogDetailsSec{
+.faqDetailsSec{
     background: url(../images/bg/11.jpg) no-repeat scroll center center/cover;
     position: relative;
     height: 80vh;
 }
-.blogDetailsSec:before{
+.faqDetailsSec:before{
     position: absolute;
     content: '';
     left: 0;
@@ -1936,7 +1956,7 @@ i.stroke_black {
     margin: 0 0 65px;
     padding: 34px 0 27px;
 }
-.blogDescriptionTop{
+.faqDescriptionTop{
     margin-bottom: 26px;
 }
 .journal_content h2{
@@ -2229,17 +2249,17 @@ i.stroke_black {
 .workDetailHead.bdetail{
     padding-bottom: 0;
 }
-.singleBlog .blogThumb img{
+.singlefaq .faqThumb img{
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
 }
-.singleBlog .blogThumb{
+.singlefaq .faqThumb{
     overflow: hidden;
 }
-.singleBlog:hover .blogThumb img{
+.singlefaq:hover .faqThumb img{
     transform: scale(1.08) rotate(-2deg);
     -moz-transform: scale(1.08) rotate(-2deg);
     -o-transform: scale(1.08) rotate(-2deg);
@@ -2256,6 +2276,11 @@ i.stroke_black {
 .parallaxThree,
 .parallaxFour{
     height: 100vh;
+    position: relative;
+    width: 100%;
+}
+.parallaxZero {
+    height: 50vh;
     position: relative;
     width: 100%;
 }
