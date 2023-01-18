@@ -32,6 +32,11 @@ body {
     overflow-x: hidden;
     max-width: 100%;
 }
+:root {
+    --RED: #D8416C;
+    --ORANGE: #F08F40;
+    --PURPLE: #A426B5;
+}
 .header{
     position: absolute;
     left: 0;
@@ -84,7 +89,7 @@ body {
 }
 .mainMenu ul li.active a,
 .mainMenu ul li a:hover{
-    color: #fd0060;
+    color: var(--RED);
 }
 .mainMenu ul ul.sub-menu{
     position: absolute;
@@ -116,7 +121,7 @@ body {
     border-bottom: 5px solid #fff;
 }
 i.stroke {
-    background-image: linear-gradient(91deg, #ff00de 0%, #FF696F 50%, #ffd200 100%);
+    background-image: linear-gradient(91deg, var(--RED) 0%, var(--ORANGE) 50%, var(--PURPLE) 100%);
     -webkit-background-clip: text;
     color: transparent;
     background-attachment: fixed;
@@ -160,7 +165,7 @@ i.stroke_black {
     display: block;
 }
 .mainMenu ul li:hover > a{
-    color: #fd0060 !important;
+    color: var(--RED) !important;
 }
 .callus{
     text-align: right;
@@ -193,7 +198,7 @@ i.stroke_black {
 }
 .isSticky.fixedHeader .mainMenu ul li.active a,
 .isSticky.fixedHeader .mainMenu ul li a:hover{
-    color: #fd0060;
+    color: var(--RED);
 }
 .isSticky.fixedHeader .logo{
     display: none;
@@ -206,11 +211,11 @@ i.stroke_black {
     display: block;
 }
 .isSticky.fixedHeader .logo h1 a{
-    color: #fd0060;
+    color: var(--RED);
 }
 
 .fixedHeader .mainMenu ul ul.sub-menu::before{
-    border-bottom: 5px solid #fd0060;
+    border-bottom: 5px solid var(--RED);
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
 }
@@ -306,7 +311,7 @@ i.stroke_black {
     right: 0;
 }
 .mouseSlider:hover{
-    border-color: #fd0060;
+    border-color: var(--RED);
 }
 .mouseSlider a.hover{
     visibility: hidden;
@@ -348,7 +353,7 @@ i.stroke_black {
     right: 0;
 }
 .mouseSlider2:hover{
-    border-color: #fd0060;
+    border-color: var(--RED);
 }
 .mouseSlider2 a.hover{
     visibility: hidden;
@@ -397,13 +402,13 @@ i.stroke_black {
     top: -118px;
     left: 0;
     right: 0;
-    background: -moz-linear-gradient(359deg, #ff00de 0%, #FF696F 50%, #ffd200 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff00de), color-stop(50%, #FF696F), color-stop(100%, #ffd200));
-    background: -webkit-linear-gradient(359deg, #ff00de 0%, #FF696F 50%, #ffd200 100%); 
-    background: -o-linear-gradient(359deg, #ff00de 0%, #FF696F 50%, #ffd200 100%);
-    background: -ms-linear-gradient(359deg, #ff00de 0%, #FF696F 50%, #ffd200 100%);
-    background: linear-gradient(91deg, #ff00de 0%, #FF696F 50%, #ffd200 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff00de', endColorstr='#ffd200',GradientType=1 ); 
+    background: -moz-linear-gradient(359deg, var(--RED) 0%, var(--ORANGE) 50%, var(--PURPLE) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, var(--RED)), color-stop(50%, var(--ORANGE)), color-stop(100%, var(--PURPLE)));
+    background: -webkit-linear-gradient(359deg, var(--RED) 0%, var(--ORANGE) 50%, var(--PURPLE) 100%); 
+    background: -o-linear-gradient(359deg, var(--RED) 0%, var(--ORANGE) 50%, var(--PURPLE) 100%);
+    background: -ms-linear-gradient(359deg, var(--RED) 0%, var(--ORANGE) 50%, var(--PURPLE) 100%);
+    background: linear-gradient(91deg, var(--RED) 0%, var(--ORANGE) 50%, var(--PURPLE) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--RED)', endColorstr='var(--PURPLE)',GradientType=1 ); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 13px 16px 27px rgba(0, 0, 0, .11);
@@ -476,7 +481,7 @@ i.stroke_black {
     font-weight: 600;
 }
 .singleService a.learn:hover{
-    color: #fd0060;
+    color: var(--RED);
 }
 
 /*=======================================================================
@@ -499,7 +504,7 @@ i.stroke_black {
     margin-bottom:21px;
 }
 .teamDeg h4.magenta{
-    color: #fd0060;
+    color: var(--RED);
 }
 .teamTop{
     margin-bottom: 133px;
@@ -510,7 +515,7 @@ i.stroke_black {
     position: relative;
 }
 .testmonial::before {
-    background: #fd0060;
+    background: var(--RED);
     content: "";
     height: 2px;
     left: 0;
@@ -526,7 +531,7 @@ i.stroke_black {
     position: absolute;
     top: -17px;
     font-size: 27px;
-    color: #fd0060;
+    color: var(--RED);
 }
 .singleTeam{
     text-align: center;
@@ -608,7 +613,7 @@ i.stroke_black {
     font-weight: 700;
 }
 .workTag a:hover{
-    color: #fd0060;
+    color: var(--RED);
 }
 .work_btn {
     background: #000000;
@@ -670,7 +675,7 @@ i.stroke_black {
 }
 #workCarousel .slick-prev:hover, 
 #workCarousel .slick-next:hover{
-    background: #fd0060;
+    background: var(--RED);
 }
 #workCarousel .slick-prev i, 
 #workCarousel .slick-next i{
@@ -720,7 +725,7 @@ i.stroke_black {
     overflow: hidden;
 }
 .signatureandname h4 {
-    color: #fd0060;
+    color: var(--RED);
     float: left;
     font-weight: 700;
     margin: 22px 0 0;
@@ -759,7 +764,7 @@ i.stroke_black {
     margin-bottom: 31px;
 }
 .testAut h4{
-    color: #fd0060;
+    color: var(--RED);
     margin: 0 0 3px;
 }
 .testAut p{
@@ -803,7 +808,7 @@ i.stroke_black {
     opacity: 1;
 }
 #testmonialCaro.owl-theme .owl-dots .owl-dot.active span{
-    background: #fd0060;
+    background: var(--RED);
     height: 10px;
     width: 10px;
     top: -2px;
@@ -856,7 +861,7 @@ i.stroke_black {
     padding: 61px 30px 45px 41px;   
 }
 .faqDate{
-    color: #fd0060;
+    color: var(--RED);
     font-size: 12px;
     font-weight: 400;
     line-height: 1;
@@ -878,7 +883,7 @@ i.stroke_black {
     color: #000000;
 }
 .faqTitle a:hover{
-    color: #fd0060;
+    color: var(--RED);
 }
 .faqDec p:last-of-type{
     margin-bottom: 39px;
@@ -899,12 +904,12 @@ i.stroke_black {
     margin-right: 9px;
 }
 .faqComs a:hover{
-    color: #fd0060;
+    color: var(--RED);
 }
 .bauthor,
 .bauthor a{
     font-size: 12px;
-    color: #fd0060;
+    color: var(--RED);
     line-height: 2;
 }
 .bauthor a{
@@ -1003,7 +1008,7 @@ i.stroke_black {
 
 .single_form input.reqError,
 .single_form textarea.reqError{
-    border-color: #fd0060;
+    border-color: var(--RED);
 }
 
 /*=======================================================================
@@ -1053,7 +1058,7 @@ i.stroke_black {
     margin-right: 11px;
 }
 .socialIcon a:hover{
-    background: #fd0060;
+    background: var(--RED);
     color: #fff;
 }
 .socialIcon a.fb:hover{
@@ -1188,7 +1193,7 @@ i.stroke_black {
 .consNotice i{
     background: #fff;
     border-radius: 50%;
-    color: #fd0060;
+    color: var(--RED);
     font-size: 60px;
     height: 109px;
     text-align: center;
@@ -1212,7 +1217,7 @@ i.stroke_black {
 [15] BACK TO TOP
 =========================================================================*/
 .showit {
-    background: #fd0060;
+    background: var(--RED);
     bottom: 60px;
     color: #ffffff;
     font-size: 20px;
@@ -1381,7 +1386,7 @@ i.stroke_black {
     position: relative;
 }
 #testmonialCaro.home_page2::before{
-    color: #fd0060;
+    color: var(--RED);
 }
 .faqSection.home_page2{
     background: url("../images/bg/10.jpg") no-repeat scroll center center / cover;
@@ -1515,7 +1520,7 @@ i.stroke_black {
 }
 .slider2 .tp-leftarrow.default:hover.round:before,
 .slider2 .tp-rightarrow.default:hover.round:after{
-    color: #fb0060;
+    color: var(--RED);
 }
 .slider2 .tparrows.default.round.hidearrows, 
 .slider2 .tp-bullets.simplebullets.hidebullets {
@@ -1603,7 +1608,7 @@ i.stroke_black {
 }
 .wdContent h5{
     text-transform: uppercase;
-    color: #fd0060;
+    color: var(--RED);
     margin-bottom: 21px;
 }
 .wdContent p{
@@ -1618,7 +1623,7 @@ i.stroke_black {
 .rewdContent h5{
     text-transform: uppercase;
     font-weight: 600;
-    color: #fd0060;
+    color: var(--RED);
     margin-bottom: 40px;
 }
 .rewdContent p{
@@ -1816,7 +1821,7 @@ i.stroke_black {
     padding: 14px 10px 14px 26px;
 }
 .faqCat ul li a:hover{
-    color: #fd0060;
+    color: var(--RED);
 }
 .faqContents{
     background: #f3f3f3;
@@ -1898,7 +1903,7 @@ i.stroke_black {
     font-weight: 600;
 }
 .singleJournal_meta a.jon_date:hover{
-    color: #fd0060;
+    color: var(--RED);
 }
 .singleJournal_meta{
     line-height: .8;
@@ -1906,7 +1911,7 @@ i.stroke_black {
 }
 .singleJournal_meta a{
     font-size: 14px;
-    color: #fd0060;
+    color: var(--RED);
     letter-spacing: 2.8px;
     text-transform: uppercase;
     font-weight: 500;
@@ -1917,7 +1922,7 @@ i.stroke_black {
 .jon_comment{
     width: 31px;
     height: 24px;
-    background: #fd0060;
+    background: var(--RED);
     color: #fff;
     font-size: 14px;
     text-align: center;
@@ -1936,7 +1941,7 @@ i.stroke_black {
     border-color: #333 transparent transparent;
 }
 .jon_comment::before {
-    border-color: #fd0060 transparent transparent;
+    border-color: var(--RED) transparent transparent;
     border-style: solid;
     border-width: 8px 8px 0 0;
     bottom: -8px;
@@ -2006,7 +2011,7 @@ i.stroke_black {
     margin-bottom: 19px;
 }
 .journalmeta a.jnalDate {
-    border-bottom: 2px solid #fd0060;
+    border-bottom: 2px solid var(--RED);
     color: #000;
     font-size: 14px;
     font-weight: 700;
@@ -2017,7 +2022,7 @@ i.stroke_black {
 }
 .journalmeta a:hover,
 .authorName a:hover{
-    color: #fd0060;
+    color: var(--RED);
 }
 .journal_content{
     padding-bottom: 67px;
@@ -2029,7 +2034,7 @@ i.stroke_black {
     margin-bottom: 13px;
 }
 .j_contentRel h3 a:hover{
-    color: #fd0060
+    color: var(--RED)
 }
 .authorName {
     color: #000;
@@ -2106,7 +2111,7 @@ i.stroke_black {
 }
 .comDate{
     font-size: 12px;
-    color: #fd0060;
+    color: var(--RED);
     line-height: .8;
 }
 .comAutReply {
@@ -2124,10 +2129,10 @@ i.stroke_black {
     text-transform: uppercase;
 }
 .comAutReply a:hover{
-    color: #fd0060;
+    color: var(--RED);
 }
 .comAutReply a.reply{
-    color: #fd0060;
+    color: var(--RED);
     position: relative;
 }
 .comAutReply a.reply:hover,

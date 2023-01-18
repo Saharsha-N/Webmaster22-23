@@ -294,7 +294,7 @@ blockquote p{
     font-weight: 600;
     letter-spacing: 2.8px;
     line-height: 46px;
-    background: #fb0060;
+    background: var(--RED);
 }
 .bes_button2 i{
     margin-left: 18px;
@@ -317,7 +317,7 @@ blockquote p{
     -o-align-items: center;
     -ms-align-items: center;
     align-items: center;
-    background: #fb0060 none repeat scroll 0 0;
+    background: var(--RED) none repeat scroll 0 0;
     border-radius: 30px;
     color: #fff;
     display: inline-flex;
@@ -358,7 +358,7 @@ blockquote p{
     text-transform: uppercase;
 }
 .bes_button4:hover{
-    background: #fb0060;
+    background: var(--RED);
     color: #fff;
 }
 
